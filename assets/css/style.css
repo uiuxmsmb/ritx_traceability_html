@@ -27,8 +27,12 @@ header {
   max-width: 800px;
   margin: 0 auto;
   padding-bottom: 20px; }
-  .ritx-trace-container footer > img {
-    height: 12px; }
+  .ritx-trace-container footer {
+    color: #066839;
+    font-weight: 700;
+    font-size: .75rem; }
+    .ritx-trace-container footer > img {
+      height: 12px; }
 
 .card.ritx-trace {
   border-color: #8BC63F; }
