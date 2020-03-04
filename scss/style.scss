@@ -1,10 +1,10 @@
 // Import variable
 @import 'vars.scss';
 
-
+// Set root font size (16 is default)
 :root {
     font-size: $root-font-size;
-  }
+}
 
 body {
     background-color: $bg-color;
@@ -113,6 +113,13 @@ header {
                 > img {
                     width: 26px;
                 }
+            }
+            .label-text {
+                // background-color: black;
+            }
+            .label-value {
+                // background-color: orange;
+                margin-top: -3px;
             }
             &:first-child {
                 border-radius: $item-border-radius $item-border-radius 0 0;

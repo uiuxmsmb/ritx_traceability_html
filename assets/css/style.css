@@ -79,6 +79,8 @@ header {
       text-align: center; }
       .card.ritx-trace .list-unstyled .media .media-icon > img {
         width: 26px; }
+    .card.ritx-trace .list-unstyled .media .label-value {
+      margin-top: -3px; }
     .card.ritx-trace .list-unstyled .media:first-child {
       border-radius: 4px 4px 0 0; }
       .card.ritx-trace .list-unstyled .media:first-child .media-icon {
