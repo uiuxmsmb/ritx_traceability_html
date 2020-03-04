@@ -114,9 +114,6 @@ header {
                     width: 26px;
                 }
             }
-            .label-text {
-                // background-color: black;
-            }
             .label-value {
                 // background-color: orange;
                 margin-top: -3px;
@@ -213,7 +210,7 @@ header {
                                 position: relative;
                                 padding-right: $gap / 2;
                                 height: $lihat-button-size;
-                                width: 100px;
+                                width: 60px;
                                 margin-right: $gap / 3;
                                 &:before {
                                     right: $gap / 2;
