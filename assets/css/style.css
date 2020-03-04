@@ -6,6 +6,9 @@
  * @version 1.0.0
  * Copyright 2020. UNLICENSED licensed.
  */
+:root {
+  font-size: 18px; }
+
 body {
   background-color: #E6EDE2;
   font-family: "Nunito", sans-serif; }

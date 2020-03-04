@@ -2,6 +2,10 @@
 @import 'vars.scss';
 
 
+:root {
+    font-size: $root-font-size;
+  }
+
 body {
     background-color: $bg-color;
     font-family: $custom-google-font;
