@@ -1,0 +1,274 @@
+// Import variable
+@import 'vars.scss';
+
+
+body {
+    background-color: $bg-color;
+    font-family: $custom-google-font;
+}
+
+// Header
+header {
+    background-color: $primary-color;
+    padding: $gap / 2;
+    margin-bottom: $gap / 2;
+    .logo img {
+        width: 84px;
+    }
+    .playstore img {
+        width: 149px;
+    }
+}
+
+
+// Main mobile first container
+.ritx-trace-container {
+    width: 100%;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding-bottom: $gap / 1.5;
+
+    footer {
+        > img {
+            height: 12px;
+        }
+    }
+}
+
+// Card or Panel
+.card.ritx-trace {
+    border-color: $primary-color;
+    .card-header {
+        background-color: $primary-color;
+        border-bottom-color: $primary-color;
+        color: #ffffff;
+    }
+    &.petani-card {
+        .card-header {
+            h4 {
+                margin: 0;
+                font-size: 1.375rem;
+                font-weight: 700;
+            }
+            p {
+                color: $secondary-color;
+                margin: 0;
+                padding: 0;
+                font-size: .875rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .card-body {
+        padding: $gap / 3;
+        .heading-text {
+            margin-bottom: $gap / 2;
+            small {
+                color: $label-text-color;
+                font-size: .75rem;
+            }
+            h4 {
+                color: $secondary-color;
+                font-size: 1.125rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &.aktivitas-card {
+        .heading-text {
+            h4 {
+                font-size: .875rem;
+            }
+        }
+    }
+
+    .label-text {
+        color: $label-text-color;
+        font-size: .75rem;
+        margin: 0;
+    }
+    .label-value {
+        color: $secondary-color;
+        font-size: .875rem;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    .list-unstyled {
+        .media {
+            background-color: $bg-color;
+            border-bottom: 1px solid #ffffff;
+            .media-icon {
+                background-color: $icon-bg;
+                display: block;
+                height: $media-icon-size;
+                width: $media-icon-size;
+                text-align: center;
+                > img {
+                    width: 26px;
+                }
+            }
+            &:first-child {
+                border-radius: $item-border-radius $item-border-radius 0 0;
+                .media-icon {
+                     border-radius: $item-border-radius 0 0 0;
+                }
+            }
+            &:last-child {
+                border-bottom-width: 0;
+                border-radius: 0 0 $item-border-radius $item-border-radius;
+                .media-icon {
+                    border-radius: 0 0 0 $item-border-radius;
+                }
+            }
+        }
+    }
+
+    .list-group {
+        .list-group-item {
+            background-color: $bg-color;
+            border-width: 0;
+            margin-bottom: 0;
+            border-bottom: 1px solid #ffffff;
+            padding: $gap / 6 $gap / 3 $gap / 3 $gap / 3;
+        }
+    }
+
+    // Aktivitas
+    .aktivitas {
+        > li {
+            .aktivitas-item {
+                background-color: $bg-color;
+                padding: $gap / 4 $gap / 3;
+                border-radius: $item-border-radius;
+                color: $secondary-color;
+                font-size: .875rem;
+                font-weight: bold;
+                position: relative;
+                z-index: 3;
+                small {
+                    color: $label-text-color;
+                    font-weight: 600;
+                }
+            }
+            > ul {
+                padding: $gap / 3 0 !important;
+                > li {
+                    padding-left: $gap;
+                    position: relative;
+                    &:after {
+                        position: absolute;
+                        width: 2px;
+                        content: "";
+                        top: -5px;
+                        bottom: 0;
+                        left: 12px;
+                        border-left: 2px dashed $primary-color;
+                    }
+                    &:first-child:after {
+                        top: -8px;
+                    }
+                    &:last-child:after {
+                        bottom: -10px;
+                    }
+                    &:before {
+                        display: block;
+                        content: "";
+                        width: 11px;
+                        height: 11px;
+                        background-color: $primary-color;
+                        left: $gap / 4;
+                        top: $gap / 4 + 1;
+                        position: absolute;
+                        border-radius: 50%;
+                    }
+                    .date {
+                        color: $label-text-color;
+                        font-size: .75rem;
+                    }
+                    h5 {
+                        color: $secondary-color;
+                        font-size: .875rem;
+                        font-weight: 700;
+                    }
+                    .expand-item {
+                        .expand-head {
+                            .lihat-btn {
+                                color: $primary-color;
+                                font-weight: 800;
+                                font-size: .75rem;
+                                position: relative;
+                                padding-right: $gap / 2;
+                                height: $lihat-button-size;
+                                width: 100px;
+                                margin-right: $gap / 3;
+                                &:before {
+                                    right: $gap / 2;
+                                    height: $lihat-button-size;
+                                    content: $tutup-text;
+                                    top: 1px;
+                                    position: absolute;
+                                }
+                                &:after {
+                                    width: $lihat-chevron-icon-size;
+                                    height: $lihat-chevron-icon-size;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 6px;
+                                    content: "";
+                                    background-image: url(../img/chevron_up@2x.png);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: 10px 7px;
+                                }
+                                &.collapsed {
+                                    &:before {
+                                        content: $lihat-text;
+                                    }
+                                    &:after {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+                        }
+                        .expand-body {
+                            background-color: $bg-color;
+                            padding: $gap / 3;
+                            border-radius: $item-border-radius;
+                            font-size: .75rem;
+                            table {
+                                tr {
+                                    td {
+                                        color: $table-text-color;
+                                        padding: $gap / 5 0;
+                                        vertical-align: top;
+                                        line-height: .875rem;
+                                        &.table-value {
+                                            color: $text-color;
+                                        }
+                                    }
+                                }
+                            }
+                            hr {
+                                border-color: #ffffff;
+                                margin-left: -($gap / 3);
+                                margin-right: -($gap / 3);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                ul {
+                    li:last-child:after {
+                        height: 10px;
+                        top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,190 @@
+/*!
+ * ritx_trace_html
+ * HTML for RiTx Traceability Mobile View
+ * -
+ * @author Ari Rus
+ * @version 1.0.0
+ * Copyright 2020. UNLICENSED licensed.
+ */
+body {
+  background-color: #E6EDE2;
+  font-family: "Nunito", sans-serif; }
+
+header {
+  background-color: #8BC63F;
+  padding: 15px;
+  margin-bottom: 15px; }
+  header .logo img {
+    width: 84px; }
+  header .playstore img {
+    width: 149px; }
+
+.ritx-trace-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 20px; }
+  .ritx-trace-container footer > img {
+    height: 12px; }
+
+.card.ritx-trace {
+  border-color: #8BC63F; }
+  .card.ritx-trace .card-header {
+    background-color: #8BC63F;
+    border-bottom-color: #8BC63F;
+    color: #ffffff; }
+  .card.ritx-trace.petani-card .card-header h4 {
+    margin: 0;
+    font-size: 1.375rem;
+    font-weight: 700; }
+  .card.ritx-trace.petani-card .card-header p {
+    color: #066839;
+    margin: 0;
+    padding: 0;
+    font-size: .875rem;
+    font-weight: 600; }
+  .card.ritx-trace .card-body {
+    padding: 10px; }
+    .card.ritx-trace .card-body .heading-text {
+      margin-bottom: 15px; }
+      .card.ritx-trace .card-body .heading-text small {
+        color: #71B163;
+        font-size: .75rem; }
+      .card.ritx-trace .card-body .heading-text h4 {
+        color: #066839;
+        font-size: 1.125rem;
+        font-weight: 700; }
+  .card.ritx-trace.aktivitas-card .heading-text h4 {
+    font-size: .875rem; }
+  .card.ritx-trace .label-text {
+    color: #71B163;
+    font-size: .75rem;
+    margin: 0; }
+  .card.ritx-trace .label-value {
+    color: #066839;
+    font-size: .875rem;
+    margin: 0;
+    font-weight: 700; }
+  .card.ritx-trace .list-unstyled .media {
+    background-color: #E6EDE2;
+    border-bottom: 1px solid #ffffff; }
+    .card.ritx-trace .list-unstyled .media .media-icon {
+      background-color: #27813A;
+      display: block;
+      height: 50px;
+      width: 50px;
+      text-align: center; }
+      .card.ritx-trace .list-unstyled .media .media-icon > img {
+        width: 26px; }
+    .card.ritx-trace .list-unstyled .media:first-child {
+      border-radius: 4px 4px 0 0; }
+      .card.ritx-trace .list-unstyled .media:first-child .media-icon {
+        border-radius: 4px 0 0 0; }
+    .card.ritx-trace .list-unstyled .media:last-child {
+      border-bottom-width: 0;
+      border-radius: 0 0 4px 4px; }
+      .card.ritx-trace .list-unstyled .media:last-child .media-icon {
+        border-radius: 0 0 0 4px; }
+  .card.ritx-trace .list-group .list-group-item {
+    background-color: #E6EDE2;
+    border-width: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ffffff;
+    padding: 5px 10px 10px 10px; }
+  .card.ritx-trace .aktivitas > li .aktivitas-item {
+    background-color: #E6EDE2;
+    padding: 7.5px 10px;
+    border-radius: 4px;
+    color: #066839;
+    font-size: .875rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 3; }
+    .card.ritx-trace .aktivitas > li .aktivitas-item small {
+      color: #71B163;
+      font-weight: 600; }
+  .card.ritx-trace .aktivitas > li > ul {
+    padding: 10px 0 !important; }
+    .card.ritx-trace .aktivitas > li > ul > li {
+      padding-left: 30px;
+      position: relative; }
+      .card.ritx-trace .aktivitas > li > ul > li:after {
+        position: absolute;
+        width: 2px;
+        content: "";
+        top: -5px;
+        bottom: 0;
+        left: 12px;
+        border-left: 2px dashed #8BC63F; }
+      .card.ritx-trace .aktivitas > li > ul > li:first-child:after {
+        top: -8px; }
+      .card.ritx-trace .aktivitas > li > ul > li:last-child:after {
+        bottom: -10px; }
+      .card.ritx-trace .aktivitas > li > ul > li:before {
+        display: block;
+        content: "";
+        width: 11px;
+        height: 11px;
+        background-color: #8BC63F;
+        left: 7.5px;
+        top: 8.5px;
+        position: absolute;
+        border-radius: 50%; }
+      .card.ritx-trace .aktivitas > li > ul > li .date {
+        color: #71B163;
+        font-size: .75rem; }
+      .card.ritx-trace .aktivitas > li > ul > li h5 {
+        color: #066839;
+        font-size: .875rem;
+        font-weight: 700; }
+      .card.ritx-trace .aktivitas > li > ul > li .expand-item .expand-head .lihat-btn {
+        color: #8BC63F;
+        font-weight: 800;
+        font-size: .75rem;
+        position: relative;
+        padding-right: 15px;
+        height: 20px;
+        width: 100px;
+        margin-right: 10px; }
+        .card.ritx-trace .aktivitas > li > ul > li .expand-item .expand-head .lihat-btn:before {
+          right: 15px;
+          height: 20px;
+          content: "Tutup";
+          top: 1px;
+          position: absolute; }
+        .card.ritx-trace .aktivitas > li > ul > li .expand-item .expand-head .lihat-btn:after {
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          right: 0;
+          top: 6px;
+          content: "";
+          background-image: url(../img/chevron_up@2x.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 10px 7px; }
+        .card.ritx-trace .aktivitas > li > ul > li .expand-item .expand-head .lihat-btn.collapsed:before {
+          content: "Lihat"; }
+        .card.ritx-trace .aktivitas > li > ul > li .expand-item .expand-head .lihat-btn.collapsed:after {
+          -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+                  transform: rotate(180deg); }
+      .card.ritx-trace .aktivitas > li > ul > li .expand-item .expand-body {
+        background-color: #E6EDE2;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: .75rem; }
+        .card.ritx-trace .aktivitas > li > ul > li .expand-item .expand-body table tr td {
+          color: #829177;
+          padding: 6px 0;
+          vertical-align: top;
+          line-height: .875rem; }
+          .card.ritx-trace .aktivitas > li > ul > li .expand-item .expand-body table tr td.table-value {
+            color: #4A4A4A; }
+        .card.ritx-trace .aktivitas > li > ul > li .expand-item .expand-body hr {
+          border-color: #ffffff;
+          margin-left: -10px;
+          margin-right: -10px; }
+  .card.ritx-trace .aktivitas > li:last-child ul li:last-child:after {
+    height: 10px;
+    top: 5px; }
