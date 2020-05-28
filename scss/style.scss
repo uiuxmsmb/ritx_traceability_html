@@ -118,7 +118,6 @@ header {
                 }
             }
             .label-value {
-                // background-color: orange;
                 margin-top: -3px;
             }
             &:first-child {
@@ -159,9 +158,25 @@ header {
                 font-weight: bold;
                 position: relative;
                 z-index: 3;
-                small {
-                    color: $label-text-color;
-                    font-weight: 600;
+                .aktivitas-head {
+                    small {
+                        color: $label-text-color;
+                        font-weight: 600;
+                        display: block;
+                    }
+                }
+                .lihat-semua-btn {
+                    background-color: $primary-color;
+                    border-radius: $item-border-radius;
+                    cursor: pointer;
+                    position: relative;
+                    &:after {
+                        height: 24px;
+                        width: auto;
+                        content: "Lihat Semua";
+                        font-size: .75rem;
+                        padding: 0 $gap / 3;
+                    }
                 }
             }
             > ul {
@@ -215,6 +230,7 @@ header {
                                 height: $lihat-button-size;
                                 width: 60px;
                                 margin-right: $gap / 3;
+                                cursor: pointer;
                                 &:before {
                                     right: $gap / 2;
                                     height: $lihat-button-size;

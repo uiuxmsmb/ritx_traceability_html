@@ -109,9 +109,21 @@ header {
     font-weight: bold;
     position: relative;
     z-index: 3; }
-    .card.ritx-trace .aktivitas > li .aktivitas-item small {
+    .card.ritx-trace .aktivitas > li .aktivitas-item .aktivitas-head small {
       color: #71B163;
-      font-weight: 600; }
+      font-weight: 600;
+      display: block; }
+    .card.ritx-trace .aktivitas > li .aktivitas-item .lihat-semua-btn {
+      background-color: #8BC63F;
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative; }
+      .card.ritx-trace .aktivitas > li .aktivitas-item .lihat-semua-btn:after {
+        height: 24px;
+        width: auto;
+        content: "Lihat Semua";
+        font-size: .75rem;
+        padding: 0 10px; }
   .card.ritx-trace .aktivitas > li > ul {
     padding: 10px 0 !important; }
     .card.ritx-trace .aktivitas > li > ul > li {
@@ -154,7 +166,8 @@ header {
         padding-right: 15px;
         height: 20px;
         width: 60px;
-        margin-right: 10px; }
+        margin-right: 10px;
+        cursor: pointer; }
         .card.ritx-trace .aktivitas > li > ul > li .expand-item .expand-head .lihat-btn:before {
           right: 15px;
           height: 20px;
